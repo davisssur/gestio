@@ -6,5 +6,9 @@ grant create table
 
 
 
-b)
+b)ssssssssssssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssssssssssssssss
+
 	a)INSERT INTO EMPLE VALUES (7369, 'SANCHEZ', 'EMPLEADO', 7902, '17/12/1990', 1040, NULL, 20);
