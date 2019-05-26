@@ -1,0 +1,53 @@
+a)
+
+
+select al.*
+from alumno al,notas nt
+where al.dni=nt.dni and notas =(select notas 
+from notas nt , asignatura asig
+where asig.cod=nt.cod and nota <5)
+order by desc;
+b)
+SELECT APENOM 
+FROM ALUMNOS, NOTAS 
+WHERE NOTA IN (
+	SELECT NOTA 
+FROM NOTAS
+WHERE COD IN 
+	(	SELECT COD 
+	FROM ASIGNATURAS 
+	WHERE NOMBRE='FOL')
+AND DNI IN (
+	SELECT DNI 
+	FROM ALUMNOS 
+	WHERE
+	APENOM='Díaz Fernández, María') 
+AND ALUMNOS.DNI=NOTAS.DNI);
+
+c)
+SELECT ENAME, SAL,JOB 
+FROM EMP 
+where SAl=	(select max(sal)
+		from emp 
+		group by job);
+
+select max(sal)
+from emp 
+where distict job;
+d)
+SELECT EMP_NO , JOB,COUNT(*)
+FROM EMPLE
+WHERE JOB =(SELECT  JOB
+FROM EMP )
+GROUP BY JOB 
+HAVING COUNT(*)>3 AND COUNT(*)<5;
+
+e)SELECT ESPECIALIDAD,COUNT(APELLIDOS),NOMBRE,COUNT(ESPECIALIDAD) 
+FROM PROFESORES 
+GROUP BY COD_CENTRO,ESPECIALIDAD;
+
+f)
+select nombre_sucur,count(mv.*) 
+from sucursales  su,movimientos mv
+where  su.COD_SUCUR= mv.COD_SUCUR and max(count(mv.ORDEN_MOV)
+group by nombre_sucur;

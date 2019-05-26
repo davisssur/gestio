@@ -1,0 +1,10 @@
+A)create user c##curioso identified by curioso pass;
+Grant create session
+grant create tablespace to(c##curioso)
+grant  unlimited tablespace 
+grant create table
+
+
+
+b)
+	a)INSERT INTO EMPLE VALUES (7369, 'SANCHEZ', 'EMPLEADO', 7902, '17/12/1990', 1040, NULL, 20);
