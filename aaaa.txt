@@ -1,0 +1,23 @@
+  441  git init
+  442   git config --global user.email "davissur@gmail.com"
+  443    392  git config --global user.name "davisssur"
+  444  config --global user.name "davisssur"
+  445  git config --global user.name "davisssur"
+  446  git add .
+  447  git status
+  448   git remote  add o https://github.com/davisssur/PRUEBA.git
+  449   git remote  add origin //github.com/davisssur/PRUEBA.git
+  450   git remote  add origin //github.com/davisssur/PRUEBA.git//github.com/davisssur/PRUEBA.git
+  451   git remote  add origin https://github.com/davisssur/gestio.git
+  452  git remote add origin https://github.com/davisssur/gestio.git
+  453  git remote add origin https://github.com/davisssur/gestio.git $ git remote add origin
+  454   git remote add prueba   https://github.com/davisssur/gestio.git
+  455  git push -u prueba master
+  456   git remote add prueba https://github.com/davisssur/gestio.git
+  457  git add .
+  458  status
+  459  git status
+  460  git commit -m "commit"
+   git push -u prueba master
+   git pull prueba master
+    git status
