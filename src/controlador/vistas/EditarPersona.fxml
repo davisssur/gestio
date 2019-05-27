@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="262.0" prefWidth="315.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.vistas.EditarPersonaControlador">
+   <children>
+      <GridPane fx:id="personatable" layoutX="7.0" layoutY="5.0" prefHeight="171.0" prefWidth="389.0" stylesheets="@DarkTheme.css">
+         <children>
+            <Label text="nombre" />
+            <Label text="apellido" GridPane.rowIndex="1" />
+            <Label text="calle" GridPane.rowIndex="2" />
+            <Label text="ciudad" GridPane.rowIndex="3" />
+            <Label text="codigo postal" GridPane.rowIndex="4" />
+            <Label prefHeight="34.0" prefWidth="91.0" text="cumpleaños" GridPane.rowIndex="5" />
+            <TextField fx:id="nombreField" GridPane.columnIndex="1" />
+            <TextField fx:id="apellidoField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="calleField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="ciudadField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="codigopostalField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="cumpleañosField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="111.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="316.0" minWidth="10.0" prefWidth="261.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button defaultButton="true" layoutX="65.0" layoutY="206.0" mnemonicParsing="false" onAction="#guardar" text="GUARDAR" />
+      <Button layoutX="250.0" layoutY="206.0" mnemonicParsing="false" onAction="#Cancelar" text="CANCELAR" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.vistas.MenuControlador">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Archivo">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Nuevo" text="Nuevo" />
+                  <MenuItem mnemonicParsing="false" onAction="#Abrir" text="Abrir" />
+                  <MenuItem mnemonicParsing="false" onAction="#Guardar" text="Guardar" />
+                  <MenuItem mnemonicParsing="false" onAction="#GuardarComo" text="Guardar Como" />
+                  <MenuItem mnemonicParsing="false" onAction="#Salir" text="Salir" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Editar">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ayuda">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Sobre" text="About" />
+               </items>
+            </Menu>
+           
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

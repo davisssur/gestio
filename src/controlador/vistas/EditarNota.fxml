@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="262.0" prefWidth="315.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.vistas.EditarNotaControlador">
+   <children>
+      <GridPane fx:id="personatable" layoutX="7.0" layoutY="5.0" prefHeight="171.0" prefWidth="389.0" stylesheets="@DarkTheme.css">
+         <children>
+            <Label text="nombre" />
+            <Label text="descripcion" GridPane.rowIndex="1" />
+            <Label prefHeight="34.0" prefWidth="91.0" text="fecha" GridPane.rowIndex="2" />
+            <TextField fx:id="nombreField" GridPane.columnIndex="1" />
+            <TextField fx:id="descripcionField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="fechaField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="111.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="316.0" minWidth="10.0" prefWidth="261.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button defaultButton="true" layoutX="65.0" layoutY="206.0" mnemonicParsing="false" onAction="#guardar" text="GUARDAR" />
+      <Button layoutX="250.0" layoutY="206.0" mnemonicParsing="false" onAction="#Cancelar" text="CANCELAR" />
+   </children>
+</AnchorPane>
